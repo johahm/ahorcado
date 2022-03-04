@@ -289,7 +289,7 @@ function perdiste() {
 
     
 
-      /*  let etiqueta = document.querySelector("#btn-reiniciar");
+    /*  let etiqueta = document.querySelector("#btn-reiniciar");
         etiqueta.style.display = "block";
     
         etiqueta = document.querySelector(".input-letra");
