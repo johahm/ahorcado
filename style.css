@@ -1,5 +1,5 @@
 body {  
-    background-image: url("/fondo1.jpg");
+    background-image: url("fondo1.jpg");
     width: 99%;
     text-align: absolute;
     height: 90%;
@@ -301,5 +301,6 @@ button:hover {
     border-radius: 5px;
     padding: 5px;
 }
+
 
 /*  */
