@@ -10,78 +10,78 @@
     <link rel="stylesheet" href="style.css">
 
 </head> 
-<body class="contenedor"> 
-
-    <div class="desktop"></div>
-    <div class="tablet"></div>
-    <div class="movil"></div>
-
-    <button class="regresar" id="regresar" style="display: none;" onclick="location.reload();"></button>
-
-    <div style="text-align:center; margin: 10px 0px;">
-
-        <h1 class="titulo">AHORCADO</h1>
-
-        <button class="btn-letra" id="iniciar-juego" style="margin: 40px 0px;" onclick="iniciar();">INICIAR JUEGO</button>
-
-    </div>
-    <div style="text-align:center">
-        <input class="text-input" maxlength="15" type="text" id="input-nueva-palabra" placeholder="Escriba una nueva palabra">
-
-        <button class="btn-letra" id="nueva-palabra" pattern="[0-9]" type="text" onclick="agregar();">AGREGAR PALABRA</button>
-
-        <button class="btn-letra" id="mostrar-lista" onclick="mostrar();">MOSTRAR LISTA</button>
-    </div>
-
-
-    <div class="botones-game">
-        <!-- <div id="btn-juego">  -->
-        <!-- <button class="btn-letra" onclick="draw();">CANVAS</button> -->
+<body> 
+    <div class="contenedor">
+        <div class="desktop"></div>
+        <div class="tablet"></div>
+        <div class="movil"></div>
+    
+        <button class="regresar" id="regresar" style="display: none;" onclick="location.reload();"></button>
+    
+        <div style="text-align:center; margin: 10px 0px;">
+    
+            <h1 class="titulo">AHORCADO</h1>
+    
+            <button class="btn-letra" id="iniciar-juego" style="margin: 40px 0px;" onclick="iniciar();">INICIAR JUEGO</button>
+    
+        </div>
+        <div style="text-align:center">
+            <input class="text-input" maxlength="15" type="text" id="input-nueva-palabra" placeholder="Escriba una nueva palabra">
+    
+            <button class="btn-letra" id="nueva-palabra" pattern="[0-9]" type="text" onclick="agregar();">AGREGAR PALABRA</button>
+    
+            <button class="btn-letra" id="mostrar-lista" onclick="mostrar();">MOSTRAR LISTA</button>
+        </div>
+    
+    
+        <div class="botones-game">
+            <!-- <div id="btn-juego">  -->
+            <!-- <button class="btn-letra" onclick="draw();">CANVAS</button> -->
+            <div style="text-align:center;">
+                <!-- <h4> HOLA CANVAS</h4>  
+            CANVAS  height="1200px" width="1200px"
+            --><!--crear un div que contega clase y un id-->
+            <div class="intermitente mns" id="resultado" style="display: none;">¡GANASTE!
+            </div>
+            <!--<div class="parpadea text" id="aviso" style="display: none;">¡PERDISTE!
+            </div>--> 
+    
+                <canvas id="ahorcado" height="400" width="400" style="display: none;"></canvas>
+            </div>
+    
+    
+            <div id="lugar"></div>
+            <br>
+            <input type="text" maxlength="1" spellcheck="false" class="input-letra" id="input-letra" style="display: none">
+    
+            <button class="btn-letra" id="btn-letra" onclick="probar();" style="display: none">PROBAR LETRA</button>
+    
+            <button class="btn-reiniciar" id="btn-reiniciar" onclick="reiniciar();" style="display: none">VOLVER A JUGAR</button>
+        </div>
+        <div id="equivocadas" style="display: none">
+            <!-- Equivocadas -->
+        </div>
+    
+    
+        <div id="error"></div>
+    
+        <!-- 
+    
         <div style="text-align:center;">
-            <!-- <h4> HOLA CANVAS</h4>  
-        CANVAS  height="1200px" width="1200px"
-        --><!--crear un div que contega clase y un id-->
-        <div class="intermitente mns" id="resultado" style="display: none;">¡GANASTE!
+            <h4> HOLA CANVAS</h4>  
+            CANVAS  height="1200px" width="1200px"
+            <canvas id="ahorcado" height="400" width="400"></canvas>
         </div>
-        <!--<div class="parpadea text" id="aviso" style="display: none;">¡PERDISTE!
-        </div>--> 
-
-            <canvas id="ahorcado" height="400" width="400" style="display: none;"></canvas>
-        </div>
-
-
-        <div id="lugar"></div>
-        <br>
-        <input type="text" maxlength="1" spellcheck="false" class="input-letra" id="input-letra" style="display: none">
-
-        <button class="btn-letra" id="btn-letra" onclick="probar();" style="display: none">PROBAR LETRA</button>
-
-        <button class="btn-reiniciar" id="btn-reiniciar" onclick="reiniciar();" style="display: none">VOLVER A JUGAR</button>
+    -->
+    
+        <script type="text/javascript" src="canvas.js"></script>
+        <script type="text/javascript" src="ahorcado.js" type="module"></script>
+        <!-- Se añade Type: Module , para usar export e import en funciones externas-->
+    
+        <div class="footer">
+        <footer><strong> 2022 <i>Alura-Oracle 2Challenge, Johana Herrera Mayorga</i></strong> - Todos Los Derechos Reservados.</footer>
+        </div>  
     </div>
-    <div id="equivocadas" style="display: none">
-        <!-- Equivocadas -->
-    </div>
-
-
-    <div id="error"></div>
-
-    <!-- 
-
-    <div style="text-align:center;">
-        <h4> HOLA CANVAS</h4>  
-        CANVAS  height="1200px" width="1200px"
-        <canvas id="ahorcado" height="400" width="400"></canvas>
-    </div>
--->
-
-    <script type="text/javascript" src="canvas.js"></script>
-    <script type="text/javascript" src="ahorcado.js" type="module"></script>
-    <!-- Se añade Type: Module , para usar export e import en funciones externas-->
-
-    <div class="footer">
-    <footer><strong> 2022 <i>Alura-Oracle 2Challenge, Johana Herrera Mayorga</i></strong> - Todos Los Derechos Reservados.</footer>
-    </div>   
-</div> 
 </body>
 </html>
 
