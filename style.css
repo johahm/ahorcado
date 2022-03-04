@@ -3,14 +3,14 @@ body {
     width: 99%;
     text-align: absolute;
     height: 90%;
-    background-size: cover;
+    /*background-size: cover;*/
 }
 /*.contenedor {
     height: 0px;
 
 }*/
 /* para resolucion de movil*/
-@media (max-width: 360px) {
+@media (max-width: 400px) {
     .desktop{
         display: none;
     }
@@ -161,7 +161,7 @@ footer, strong{
     color: rgb(255, 208, 0);
     position: absolute;
     top: 150px;
-    left: 110px;
+    left: 100px;
     transform: translate(73%, 73%);
     text-align: center;
 
