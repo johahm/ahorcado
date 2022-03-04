@@ -3,12 +3,11 @@
 
 }
 .contenedor {
-   /* background-image: url("fondo1.jpg");
-    background-repeat: repeat;*/
-    width: 3000px;
-    max-width: 1000px;
+    background: url("fondo1.jpg") no-repeat;
+    width: 1360px;
+    max-width: 1360px;
     margin: 0 auto;
-    overflow: hidden;
+    background-size: cover;
 }
 #regresar {
     width: 0;
