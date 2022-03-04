@@ -1,13 +1,17 @@
-*{
-    margin: 0;
-
+body {
+    background-image: url(fondo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center; /*centrar la imagen*/
+    background-attachment: fixed; /*imagen fija en una sola posicion*/
+    background-size: cover; /*sombreado en la imagen*/
+    height: 90%;
+    margin: 0px;
 }
-.contenedor {
-    background: url("fondo1.jpg") no-repeat;
-    width: 1360px;
-    max-width: 1360px;
-    margin: 0 auto;
-    background-size: cover;
+.footer {
+    height: 10%;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    text-align:center;
 }
 #regresar {
     width: 0;
@@ -17,7 +21,7 @@
     border-bottom: 50px solid transparent;
     border-left: 50px solid rgb(244, 245, 250);
     background-color:transparent;
-    position: absolute;
+    position:absolute ;
 
 }
 
