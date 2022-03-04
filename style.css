@@ -1,4 +1,5 @@
 .contenedor {
+    background-image: url("/fondo1.jpg");
     width: 99%;
     text-align: center;
 }
