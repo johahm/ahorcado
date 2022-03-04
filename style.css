@@ -3,7 +3,7 @@
     text-align: center;
 }
 /* para resolucion de movil*/
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     .desktop{
         display: none;
     }
@@ -24,7 +24,7 @@
 }
 
 /* para resolucion de escritorio*/
-@media (min-width: 991px) {
+@media (min-width: 1440px) {
     .tablet{
         display: none;
     }
