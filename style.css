@@ -10,9 +10,10 @@ body {
 
 }*/
 /* para resolucion de movil*/
-@media (max-width: 400px) {
+@media screen and (max-width: 400px), h2 {
     .desktop{
         display: none;
+        font-size: 35px;
     }
     .tablet{
         display: none;
@@ -21,7 +22,7 @@ body {
 }
 /* para resolucion de tablet*/
 
-@media (min-width: 768px) and (max-width: 990px) {
+@media screen and (min-width: 768px) and (max-width: 990px) {
     .desktop{
         display: none;
     }
@@ -31,7 +32,7 @@ body {
 }
 
 /* para resolucion de escritorio*/
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
     .tablet{
         display: none;
     }
@@ -153,17 +154,14 @@ footer, strong{
 }
 
 .mns {
-    font-size:28px;
+    font-size: 35px;
     font-family:helvetica;
     font-weight:bold;
     text-shadow: 0.1em 0.1em 0.10em #141414 ;
-    font-size: 90px;
     color: rgb(255, 208, 0);
     position: absolute;
-    top: 150px;
-    left: 100px;
-    transform: translate(73%, 73%);
     text-align: center;
+    transform: translate(73%, 73%);
 
 }
 
