@@ -1,3 +1,15 @@
+*{
+    margin: 0;
+
+}
+.contenedor {
+   /* background-image: url("fondo1.jpg");
+    background-repeat: repeat;*/
+    width: 3000px;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 #regresar {
     width: 0;
     height: 0;
@@ -76,6 +88,21 @@ footer, strong{
 
 }
 
+/* Si el tamaño de la pantalla es de 601px o más, ajusta el tamaño de la fuente de <div> a 80px */
+@media only screen and (min-width: 601px) {
+    div.intermitente {
+      font-size: 80px;
+    }
+  }
+  
+  /* Si el tamaño de la pantalla es de 600px o menos, ajusta el tamaño de la fuente de <div> a 30px */
+  @media only screen and (max-width: 600px) {
+    div.intermitente {
+      font-size: 30px;
+    }
+  }
+  
+
 .parpadea {
     animation-name: parpadeo;
     animation-duration: 1s;
@@ -109,12 +136,14 @@ footer, strong{
     font-size:28px;
     font-family:helvetica;
     font-weight:bold;
-    text-shadow: 0.1em 0.1em 0.20em #fffff0 ;
+    text-shadow: 0.1em 0.1em 0.10em #141414 ;
     font-size: 90px;
+    color: rgb(255, 208, 0);
     position: absolute;
     top: 150px;
-    left: 50px;
+    left: 110px;
     transform: translate(73%, 73%);
+    text-align: center;
 
 }
 
@@ -195,7 +224,7 @@ footer, strong{
 .titulo {
     text-align: center;
     padding: 1px;
-    width: 45vw;
+    width: 40vw;
     margin: auto;
     color: rgb(250, 247, 246);
     border: 0.2em solid rgb(248, 240, 240);
@@ -228,7 +257,7 @@ button:hover {
     border: 0.2em solid rgba(13, 36, 240, 0.993);
     display: block;
     padding: 0.5em;
-    width: 30%;
+    width: 50%;
     height: 40px;
     margin-left: auto;
     margin-right:auto;
@@ -238,6 +267,7 @@ button:hover {
 
 
 #ahorcado {
+    background-image: url("luna-llena.jpg");
     border: 8px dashed rgb(255, 208, 0);
     background-color: transparent;
     border-radius: 7px;
