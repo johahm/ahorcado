@@ -1,12 +1,38 @@
-body {
-    background-image: url(fondo1.jpg);
-    background-repeat: no-repeat;
-    background-position: center center; /*centrar la imagen*/
-    background-attachment: fixed; /*imagen fija en una sola posicion*/
-    background-size: cover; /*sombreado en la imagen*/
-    height: 90%;
-    margin: 0px;
+.contenedor {
+    width: 99%;
+    text-align: center;
 }
+/* para resolucion de movil*/
+@media (max-width: 767px) {
+    .desktop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    
+}
+/* para resolucion de tablet*/
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop{
+        display: none;
+    }
+    .movil{
+        display: none;
+    }
+}
+
+/* para resolucion de escritorio*/
+@media (min-width: 991px) {
+    .tablet{
+        display: none;
+    }
+    .movil{
+        display: none;
+    }
+}
+
 .footer {
     height: 10%;
     width: 100%;
@@ -90,22 +116,6 @@ footer, strong{
     transform: translate(73%, 73%);
 
 }
-
-/* Si el tamaño de la pantalla es de 601px o más, ajusta el tamaño de la fuente de <div> a 80px */
-@media only screen and (min-width: 601px) {
-    div.intermitente {
-      font-size: 80px;
-    }
-  }
-  
-  /* Si el tamaño de la pantalla es de 600px o menos, ajusta el tamaño de la fuente de <div> a 30px */
-  @media only screen and (max-width: 600px) {
-    div.intermitente {
-      font-size: 30px;
-    }
-  }
-  
-
 .parpadea {
     animation-name: parpadeo;
     animation-duration: 1s;
